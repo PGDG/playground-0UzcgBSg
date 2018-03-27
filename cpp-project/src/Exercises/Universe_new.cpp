@@ -3,6 +3,6 @@
 // }
 
 int somme(int a, int b) {
-
-    return a+b;
+    int resultat = a + b;
+    return resultat;
 }
