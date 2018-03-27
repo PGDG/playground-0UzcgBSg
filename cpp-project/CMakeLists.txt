@@ -1,3 +1,4 @@
 cmake_minimum_required (VERSION 2.6)
-project (universe)
+//project (universe)
+project (somme)
 add_executable(universe src/UniverseTest.cpp src/Exercises/Universe.h src/Exercises/Universe.cpp)
