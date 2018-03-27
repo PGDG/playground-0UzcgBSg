@@ -6,7 +6,7 @@
 #include <sstream>
 #include <fstream>
 
-static int somme(int op1, int op2);
+//static int somme(int op1, int op2);
 
 using namespace std;
 
@@ -47,13 +47,13 @@ void AssertEquals(int expected, int found, string message) {
 int main() {
     try {
         int op1 =2, op2 =5;
-        AssertEquals(7, somme(op1,op2), "Running Universe::somme(2, 5)...");
+        AssertEquals(7, somme(op1,op2), "Running somme(2, 5)...");
 
         int op3 =3, op4=-3;
-        AssertEquals(0, somme(op3,op4), "Running Universe::somme(3, -3)...");
+        AssertEquals(0, somme(op3,op4), "Running *somme(3, -3)*...");
         Success(true);
 
-        if (ExistsInFile("accumulate", "src/Exercises/Universe.cpp")) {
+/*        if (ExistsInFile("accumulate", "src/Exercises/Universe.cpp")) {
             Message("My personal Yoda, you are. 🙏", "* ● ¸ .　¸. :° ☾ ° 　¸. ● ¸ .　　¸.　:. • ");
             Message("My personal Yoda, you are. 🙏", "           　★ °  ☆ ¸. ¸ 　★　 :.　 .   ");
             Message("My personal Yoda, you are. 🙏", "__.-._     ° . .　　　　.　☾ ° 　. *   ¸ .");
@@ -68,7 +68,7 @@ int main() {
             Message("Kudos 🌟", " ");
             Message("Kudos 🌟", "vector<int> galaxies {37, 3, 2};");
             Message("Kudos 🌟", "int totalStars = accumulate(galaxies.begin(), galaxies.end(), 0); // 42");
-        }
+        }*/
 
     } catch (const exception& e)  {
         Success(false);
