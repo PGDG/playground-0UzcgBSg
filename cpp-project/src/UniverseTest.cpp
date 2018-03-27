@@ -47,11 +47,12 @@ void AssertEquals(int expected, int found, string message) {
 int main() {
     try {
         int op1 =2, op2 =5;
-        AssertEquals(7, somme(op1,op2), "Running somme(2, 5)...");
+        AssertEquals(7, somme(op1,op2), "Running somme(2, 5) ...");
 
         int op3 =3, op4=-3;
-        AssertEquals(0, somme(op3,op4), "Running *somme(3, -3)*...");
+        AssertEquals(0, somme(op3,op4), "Running somme(3, -3) ...");
         Success(true);
+        Message("Kudos 🌟", "la notion est visiblement bien comprise. Félicitations !");
 
 /*        if (ExistsInFile("accumulate", "src/Exercises/Universe.cpp")) {
             Message("My personal Yoda, you are. 🙏", "* ● ¸ .　¸. :° ☾ ° 　¸. ● ¸ .　　¸.　:. • ");
@@ -73,7 +74,7 @@ int main() {
     } catch (const exception& e)  {
         Success(false);
         Message("Oops! 🐞", e.what());
-        Message("Hint 💡", "Il faut faire la somme des deux opérandes passées en argument 🤔");
+        Message("Hint 💡", "Il faut faire la somme des deux opérandes passées en argument !");
     }
 
   return 0;
