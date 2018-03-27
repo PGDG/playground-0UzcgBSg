@@ -1,10 +1,12 @@
-#include "Exercises/Universe.h"
+//#include "Exercises/Universe.h"
 
 #include <string>
 #include <vector>
 #include <iostream>
 #include <sstream>
 #include <fstream>
+
+static int somme(int op1, int op2);
 
 using namespace std;
 
@@ -45,10 +47,10 @@ void AssertEquals(int expected, int found, string message) {
 int main() {
     try {
         int op1 =2, op2 =5;
-        AssertEquals(7, Universe::somme(op1,op2), "Running Universe::somme(2, 5)...");
+        AssertEquals(7, somme(op1,op2), "Running Universe::somme(2, 5)...");
 
         int op3 =3, op4=-3;
-        AssertEquals(0, Universe::somme(op3,op4), "Running Universe::somme(3, -3)...");
+        AssertEquals(0, somme(op3,op4), "Running Universe::somme(3, -3)...");
         Success(true);
 
         if (ExistsInFile("accumulate", "src/Exercises/Universe.cpp")) {
