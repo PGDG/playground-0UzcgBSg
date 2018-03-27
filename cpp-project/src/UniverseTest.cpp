@@ -45,10 +45,10 @@ void AssertEquals(int expected, int found, string message) {
 int main() {
     try {
         int op1 =2, op2 =5;
-        AssertEquals(7, Universe::somme(op1,op2), "Running Universe::CountAllStars(2, 3)...");
+        AssertEquals(7, Universe::somme(op1,op2), "Running Universe::somme(2, 5)...");
 
         int op3 =3, op4=-3;
-        AssertEquals(0, Universe::somme(op3,op4), "Running Universe::CountAllStars(9, -3)...");
+        AssertEquals(0, Universe::somme(op3,op4), "Running Universe::somme(3, -3)...");
         Success(true);
 
         if (ExistsInFile("accumulate", "src/Exercises/Universe.cpp")) {
@@ -71,7 +71,7 @@ int main() {
     } catch (const exception& e)  {
         Success(false);
         Message("Oops! 🐞", e.what());
-        Message("Hint 💡", "Did you properly accumulate all stars into 'totalStars'? 🤔");
+        Message("Hint 💡", "Il faut faire la somme des deux opérandes passées en argument 🤔");
     }
 
   return 0;
