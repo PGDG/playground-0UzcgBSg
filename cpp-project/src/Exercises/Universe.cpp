@@ -2,7 +2,7 @@
 // { autofold
 //#include "Universe.h"
 // }
-int somme(int op1, int op2);
+static int somme(int op1, int op2);
 
 int somme(int op1, int op2) {
     int total = op1 ;
