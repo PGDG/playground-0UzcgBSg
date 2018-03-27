@@ -1,6 +1,6 @@
 # Welcome!
 
-Ce *playground* [Tech.io](https://tech.io/) est destiné aux élèves de lycée qui apprennent la programmation Arduino qui nécessite de comprendre les rudiment du langage C++.
+Ce *playground* [Tech.io](https://tech.io/) est destiné aux élèves de lycée qui apprennent la programmation Arduino qui nécessite de comprendre les rudiments du langage C++.
 
 
 Les exercices simples proposés permettent de mettre en oeuvre les notions vue en cours.
