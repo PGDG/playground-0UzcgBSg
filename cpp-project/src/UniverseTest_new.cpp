@@ -44,11 +44,11 @@ void AssertEquals(int expected, int found, string message) {
 
 int main() {
     try {
-        int somme (2,3);
-        AssertEquals(5, somme(2,3), "Running somme(2, 3)...");
+        vector<int> galaxy1 {2, 3};
+        AssertEquals(5, Universe::CountAllStars(galaxy1), "Running Universe::CountAllStars(2, 3)...");
 
-        int somme(0,-1);
-        AssertEquals(-1, somme(0,-1), "Running somme(0,-1)...");
+        vector<int> galaxy2 {9, -3};
+        AssertEquals(6, Universe::CountAllStars(galaxy2), "Running Universe::CountAllStars(9, -3)...");
         Success(true);
 
         if (ExistsInFile("accumulate", "src/Exercises/Universe.cpp")) {

@@ -2,7 +2,8 @@
 #include "Universe.h"
 // }
 
-int somme(int a, int b) {
-    int resultat = a + b;
-    return resultat;
+int Universe::CountAllStars(vector<int>& galaxies) {
+    int total = galaxies*2;
+
+    return total;
 }

@@ -7,8 +7,8 @@ using namespace std;
 
 class Universe {
 public:
-  //static int CountAllStars(vector<int>& galaxies);
-  static int somme(vector<int>& somme);
+  static int CountAllStars(int galaxies);
+  //static int somme(int, int);
 };
 
 #endif // TEST_EXERCICES_UNIVERSE_H_
