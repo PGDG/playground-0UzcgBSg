@@ -5,7 +5,8 @@
 #include <iostream>
 #include <sstream>
 #include <fstream>
-#include <Universe.cpp>
+#include <Exercices/Universe.cpp>
+
 using namespace std;
 
 void Message(string channel, string msg) {
