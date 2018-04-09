@@ -1,7 +1,6 @@
 #include "Exercises/Universe.cpp"
 
 #include <string>
-//#include <vector>
 #include <iostream>
 #include <sstream>
 #include <fstream>
