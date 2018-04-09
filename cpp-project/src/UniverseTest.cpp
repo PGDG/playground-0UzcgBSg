@@ -30,7 +30,7 @@ void AssertEquals(int expected, int found, string message) {
 
 int main() {
     try {
-        int somme (2,5);
+        int somme(2,5);
         AssertEquals(7, somme(2,5), "Running somme(2, 5)...");
 
         int somme(3,-3);
