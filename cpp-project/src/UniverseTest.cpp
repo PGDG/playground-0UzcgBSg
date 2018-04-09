@@ -5,7 +5,7 @@
 #include <iostream>
 #include <sstream>
 #include <fstream>
-#include "Exercises/Universe.h"
+#include "Exercises/Universe.cpp"
 
 using namespace std;
 
