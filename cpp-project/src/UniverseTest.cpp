@@ -31,6 +31,8 @@ void AssertEquals(int expected, int found, string message) {
 // Ecrire ici les tests permettant de valider le programme 
 int main() {
     try {
+        AssertEquals(7, test, "Running somme(2, 5)...");
+        
         AssertEquals(7, somme(2,5), "Running somme(2, 5)...");
 
         AssertEquals(0, somme(3,-3), "Running somme(3,-3)...");
