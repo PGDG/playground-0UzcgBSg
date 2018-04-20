@@ -15,13 +15,6 @@ void print(char c){
     output << c ;
 }
 
-void println(int i){
-    output << i << endl;
-}
-void print(int i){
-    output << i ;
-}
-
 void Message(string msg) {
     stringstream ss(msg);
     string line;
