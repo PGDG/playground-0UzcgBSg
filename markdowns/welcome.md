@@ -7,6 +7,8 @@ Les exercices simples proposés permettent de mettre en oeuvre les notions vue e
 
 # Var1
 
+Affecte aux variables char_MAX, char_MIN, unsigned_char_MAX, unsigned_char_MIN, int_MAX, int_MIN, unsigned_int_MAX, unsigned_int_MIN, long_MAX, long_MIN, unsigned_long_MAX et unsigned_long_MIN les valeurs limite des types de variable correspondante.
+
 @[]({"stubs": ["src/variable/exo/var1.cpp"],"command": "sh /project/target/run_var1.sh"})
 
 # Hands-on Demo
