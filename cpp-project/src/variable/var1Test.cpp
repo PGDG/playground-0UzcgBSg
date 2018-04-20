@@ -49,18 +49,18 @@ unsigned long unsigned_long_MIN=42;
 int main() {
   exo(char_MAX, char_MIN, unsigned_char_MAX, unsigned_char_MIN, int_MAX, int_MIN, unsigned_int_MAX, unsigned_int_MIN, long_MAX, long_MIN, unsigned_long_MAX, unsigned_long_MIN);
     try {
-        AssertEquals(0, char_MAX, "char_MAX");
-        AssertEquals(0, char_MIN, "char_MIN");
+        AssertEquals(-128, char_MAX, "char_MAX");
+        AssertEquals(127, char_MIN, "char_MIN");
         AssertEquals(0, unsigned_char_MAX, "unsigned_char_MAX");
-        AssertEquals(0, unsigned_char_MIN, "unsigned_char_MIN");
-        AssertEquals(0, int_MAX, "int_MAX");
-        AssertEquals(0, int_MIN, "int_MIN");
+        AssertEquals(255, unsigned_char_MIN, "unsigned_char_MIN");
+        AssertEquals(-32768, int_MAX, "int_MAX");
+        AssertEquals(32767, int_MIN, "int_MIN");
         AssertEquals(0, unsigned_int_MAX, "unsigned_int_MAX");
-        AssertEquals(0, unsigned_int_MIN, "unsigned_int_MIN");
-        AssertEquals(0, long_MAX, "long_MAX");
-        AssertEquals(0, long_MIN, "long_MIN");
+        AssertEquals(65535, unsigned_int_MIN, "unsigned_int_MIN");
+        AssertEquals(-2147483648, long_MAX, "long_MAX");
+        AssertEquals(2147483647, long_MIN, "long_MIN");
         AssertEquals(0, unsigned_long_MAX, "unsigned_long_MAX");
-        AssertEquals(0, unsigned_long_MIN, "unsigned_long_MIN");
+        AssertEquals(4294967295, unsigned_long_MIN, "unsigned_long_MIN");
       
         Success(true);
 
