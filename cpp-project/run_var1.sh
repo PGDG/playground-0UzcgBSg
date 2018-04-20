@@ -1,3 +1,3 @@
 #!/bin/sh
 
-make && ./var1
+./var1
