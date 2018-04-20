@@ -23,7 +23,7 @@ void Success(bool success) {
 void AssertEquals(int expected, int found, string message) {
     if(expected != found) {
         ostringstream error;
-        if(expected == 42){
+        if(found == 42){
             error << message << ": ???"<< endl;
         }else{
             error << message << ": wrong value"<< endl;
