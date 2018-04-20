@@ -23,19 +23,44 @@ void Success(bool success) {
 void AssertEquals(int expected, int found, string message) {
     if(expected != found) {
         ostringstream error;
-        error << message << " Expected: " << expected << ", Found: " << found  << endl;
+        if(expected == 42){
+            error << message << ": ???"<< endl;
+        }else{
+            error << message << ": wrong value"<< endl;
+        }
         throw logic_error(error.str());
     }
 }
 
 // Ecrire ici les tests permettant de valider le programme 
-int int_MAX;
-int int_MIN;
+int char_MAX=42;
+int char_MIN=42;
+int unsigned_char_MAX=42;
+int unsigned_char_MIN=42;
+int int_MAX=42;
+int int_MIN=42;
+unsigned int unsigned_int_MAX=42;
+unsigned int unsigned_int_MIN=42;
+long long_MAX=42;
+long long_MIN=42;
+unsigned long unsigned_long_MAX=42;
+unsigned long unsigned_long_MIN=42;
 
 int main() {
-  exo(int_MAX);
+  exo(char_MAX, char_MIN, unsigned_char_MAX, unsigned_char_MIN, int_MAX, int_MIN, unsigned_int_MAX, unsigned_int_MIN, long_MAX, long_MIN, unsigned_long_MAX, unsigned_long_MIN);
     try {
-        AssertEquals(0, int_MAX, "int_MAX ??");
+        AssertEquals(0, char_MAX, "char_MAX");
+        AssertEquals(0, char_MIN, "char_MIN");
+        AssertEquals(0, unsigned_char_MAX, "unsigned_char_MAX");
+        AssertEquals(0, unsigned_char_MIN, "unsigned_char_MIN");
+        AssertEquals(0, int_MAX, "int_MAX");
+        AssertEquals(0, int_MIN, "int_MIN");
+        AssertEquals(0, unsigned_int_MAX, "unsigned_int_MAX");
+        AssertEquals(0, unsigned_int_MIN, "unsigned_int_MIN");
+        AssertEquals(0, long_MAX, "long_MAX");
+        AssertEquals(0, long_MIN, "long_MIN");
+        AssertEquals(0, unsigned_long_MAX, "unsigned_long_MAX");
+        AssertEquals(0, unsigned_long_MIN, "unsigned_long_MIN");
       
         Success(true);
 
