@@ -8,6 +8,8 @@
 
 using namespace std;
 
+int int_MAX = 36;
+
 void Message(string channel, string msg) {
     stringstream ss(msg);
     string line;
@@ -30,7 +32,6 @@ void AssertEquals(int expected, int found, string message) {
 
 // Ecrire ici les tests permettant de valider le programme 
 
-static int int_MAX = 36;
 
 int main() {
   exo();
