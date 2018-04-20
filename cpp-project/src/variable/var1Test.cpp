@@ -35,7 +35,7 @@ int int_MIN;
 int main() {
   exo(int_MAX);
     try {
-        AssertEquals(42, int_MAX, "int_MAX ??");
+        AssertEquals(0, int_MAX, "int_MAX ??");
       
         Success(true);
 
