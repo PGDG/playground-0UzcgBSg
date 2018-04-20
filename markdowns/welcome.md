@@ -11,6 +11,10 @@ Affecte aux variables char_MAX, char_MIN, unsigned_char_MAX, unsigned_char_MIN, 
 
 @[]({"stubs": ["src/variable/exo/var1.cpp"],"command": "sh /project/target/run_var1.sh"})
 
+# Var2
+
+@[]({"stubs": ["src/variable/var2.cpp"],"command": "sh /project/target/run_var2.sh"})
+
 # Hands-on Demo
 
 @[Premier exemple : sauras tu faire la somme des deux opérandes ?]({"stubs": ["src/Exercises/Universe.cpp"],"command": "sh /project/target/run.sh"})
