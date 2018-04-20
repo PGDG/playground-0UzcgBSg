@@ -34,7 +34,7 @@ void AssertEquals(int expected, int found, string message) {
 
 
 int main() {
-  exo();
+  exo(int_MAX);
     try {
         AssertEquals(42, int_MAX, "int_MAX ??");
       
