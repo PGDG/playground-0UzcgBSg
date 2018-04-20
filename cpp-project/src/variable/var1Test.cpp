@@ -5,10 +5,8 @@
 #include <sstream>
 #include <fstream>
 
-
 using namespace std;
 
-int int_MAX = 36;
 
 void Message(string channel, string msg) {
     stringstream ss(msg);
@@ -31,7 +29,8 @@ void AssertEquals(int expected, int found, string message) {
 }
 
 // Ecrire ici les tests permettant de valider le programme 
-
+int int_MAX;
+int int_MIN;
 
 int main() {
   exo(int_MAX);
