@@ -9,7 +9,7 @@ using namespace std;
 string output = "";
 
 void println(char c){
-    output += c + "\n";
+    output += c + endl;
 }
 void print(char c){
     output += c;
