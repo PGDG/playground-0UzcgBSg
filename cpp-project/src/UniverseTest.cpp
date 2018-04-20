@@ -8,11 +8,6 @@
 
 using namespace std;
 
-static int char_MAX;
-static int char_MIN;
-static int int_MAX;
-static int int_MIN;
-
 void Message(string channel, string msg) {
     stringstream ss(msg);
     string line;
@@ -36,7 +31,9 @@ void AssertEquals(int expected, int found, string message) {
 // Ecrire ici les tests permettant de valider le programme 
 int main() {
     try {
-        AssertEquals(3, int_MAX, "Running somme(2, 5)...");
+        AssertEquals(7, somme(2,5), "Running somme(2, 5)...");
+
+        AssertEquals(0, somme(3,-3), "Running somme(3,-3)...");
         Success(true);
 
     } catch (const exception& e)  {
