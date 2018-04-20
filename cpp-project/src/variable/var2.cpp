@@ -9,10 +9,10 @@ using namespace std;
 string output = "";
 
 void println(char c){
-    output << c << endl;
+    output += c + "\n";
 }
 void print(char c){
-    output << c ;
+    output += c;
 }
 
 void Message(string msg) {
