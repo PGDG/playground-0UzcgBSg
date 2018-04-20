@@ -7,7 +7,7 @@ Les exercices simples proposés permettent de mettre en oeuvre les notions vue e
 
 # Var1
 
-@[Premier exemple : sauras tu faire la somme des deux opérandes ?]({"stubs": ["src/variable/exo/var1.cpp"],"command": "sh /project/target/run.sh"})
+@[Premier exemple : sauras tu faire la somme des deux opérandes ?]({"stubs": ["src/variable/exo/var1.cpp"],"command": "sh /project/target/run_var1.sh"})
 
 # Hands-on Demo
 
