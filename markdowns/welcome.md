@@ -5,6 +5,10 @@ Ce *playground* [Tech.io](https://tech.io/) est destiné aux élèves de lycée 
 
 Les exercices simples proposés permettent de mettre en oeuvre les notions vue en cours.
 
+# Var1
+
+@[Premier exemple : sauras tu faire la somme des deux opérandes ?]({"stubs": ["src/variable/exo/var1.cpp"],"command": "sh /project/target/run.sh"})
+
 # Hands-on Demo
 
 @[Premier exemple : sauras tu faire la somme des deux opérandes ?]({"stubs": ["src/Exercises/Universe.cpp"],"command": "sh /project/target/run.sh"})
